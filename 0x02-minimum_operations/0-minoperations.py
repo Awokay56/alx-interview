@@ -15,7 +15,7 @@ def minOperations(n):
     
     divisor = 2
 
-    min_operations = 0
+    num_of_operations = 0
 
     while n> 1:
         if n % divisor == 0:
@@ -23,17 +23,17 @@ def minOperations(n):
             n = n / divisor
             print("\n = n / divisor", n)
 
-            num_of_operations = min_operations += divisor
-            print("\num of ops", min_operations)
+            num_of_operations = num_of_operations + divisor
+            print("\num of ops", num_of_operations)
 
         else:
-            divisor +=1
+            divisor ++1
             print("divisor after increment: ", divisor)
 
         return num_of_operations
     
     n = 12
 
-    print(min_operation(n))
+    print(minoperation(n))
 
 
