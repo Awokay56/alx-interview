@@ -17,7 +17,7 @@ def minOperations(n):
 
     num_of_operations = 0
 
-    while n > 1:
+    while n> 1:
         if n % divisor == 0:
             print("divisor is: ", divisor)
             n = n / divisor
@@ -34,4 +34,4 @@ def minOperations(n):
     
     n = 12
 
-    print(minoperation(n))
+    print(minperation(n))
