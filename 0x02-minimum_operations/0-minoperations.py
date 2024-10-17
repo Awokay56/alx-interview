@@ -11,14 +11,13 @@ if 'n' IS IMPOSSIBLE TO ACHIEVE, RETURN '0'
 def minOperations(n):
     if n <= 1:
         return 0
-
     print("n before loop", n)
     
     divisor = 2
 
     num_of_operations = 0
 
-    while n> 1:
+    while n > 1:
         if n % divisor == 0:
             print("divisor is: ", divisor)
             n = n / divisor
@@ -28,7 +27,7 @@ def minOperations(n):
             print("\num of ops", num_of_operations)
 
         else:
-            divisor += 1
+            divisor ++1
             print("divisor after increment: ", divisor)
 
         return num_of_operations
