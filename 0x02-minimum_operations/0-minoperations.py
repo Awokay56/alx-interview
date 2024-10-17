@@ -27,13 +27,13 @@ def minOperations(n):
             print("\num of ops", num_of_operations)
 
         else:
-            divisor ++1
+            divisor +=1
             print("divisor after increment: ", divisor)
 
         return num_of_operations
     
     n = 12
 
-    print(minoperation(n))
+    print(min_operation(n))
 
 
